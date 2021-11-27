@@ -1,2 +1,2 @@
 # wbmattis2.github.io
-Personal website
+Personal website used as an extension to my regular resume.
