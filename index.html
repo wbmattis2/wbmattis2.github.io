@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>"Benny" Wayne Mattis</h1>
+        <nav>
+            <a href="index.html" class="anchorToCurrent">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <p>Click on a project below to preview it.</p>
+        <div class="main-container">
+            <div class="projects">
+                <button class="project" id="twine" aria-describedby="twine-description">
+                   Twine game
+                </button>
+                <button class="project" id="documentation" aria-describedby="documentation-description">
+                    Documentation Page
+                </button>
+                <button class="project" id="node" aria-describedby="node-description">
+                    Sci-Fi Backstory Generator
+                </button>
+                <button class="project" id="python" aria-describedby="python-description">
+                    Data Science Project
+                </button>
+            </div>
+            <div class="preview" id="default-preview" style="background-color: #004000;">
+                <div class="description" id="default-description">
+                    An error occurred. Please find navigate to the <a href="contact.html">Contact page</a> to find links to other web pages featuring my work.
+                </div>
+            </div>
+            <div class="preview" id="twine-preview" style="background-image: url('evilHour.jpeg')">
+                <div class="description" id="twine-description">
+                    A game made for the Critical-Creative Philosophy Game Jam of 2022 using HTML, CSS, and the interactive fiction tool Twine. <a href='https://wbmattis2.itch.io/the-evil-hour'>View this project at itch.io</a>
+                </div>
+            </div>
+            <div class="preview" id="documentation-preview" style="background-image: url('documentation.png')">
+                <div class="description" id="documentation-description">
+                    Example technical documentation page made with HTML and CSS. <a href='https://codepen.io/wbmattis2/pen/XyjbGy'>View this project at CodePen</a>
+                </div>
+            </div>
+            <div class="preview" id="node-preview" style="background-image: url('wordBank.png')">
+                <div class="description" id="node-description">
+                    A JavaScript program for the Node runtime environment that randomly generates silly sci-fi narratives. <a href='https://github.com/wbmattis2/SciFi-Backstory-Generator'>View this project at GitHub</a>
+                </div>
+            </div>
+            <div class="preview" id="python-preview" style="background-image: url('confusionMatrix.png')">
+                <div class="description" id="python-description">
+                    Capstone project for IBM's Professional Certificate in Data Science, using Python and data science methodology to predict rocket landings. <a href='https://github.com/wbmattis2/data-science-capstone'>View this project at GitHub</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright 2022 Benny Mattis
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
