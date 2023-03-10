@@ -20,8 +20,8 @@ This website was made from scratch with HTML, CSS, and JavaScript.
 
 ##Authors
 
-Benny Mattis is a writer and coder currently working his way through Codecademy's Full-Stack Engineer career path.
+Benny Mattis is a writer and coder practicing web development through Codecademy and the certificate program at Montgomery College.
 
 ##Copyright
 
-Portfolio website copyright 2022 by Benny Mattis.
+Portfolio website copyright 2023 by Benny Mattis.
