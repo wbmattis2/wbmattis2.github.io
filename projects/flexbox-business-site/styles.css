@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color:darkolivegreen;
+}
+
+header {
+    position: fixed;
+    color: black;
+    /*height: 4rem;*/
+    width: 100%;
+
+}
+
+nav {
+    width: 100%;
+    /*height: 4rem;
+    display: flex;
+    justify-content: center;*/
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    text-decoration: underline;
+    border: 2px solid darkolivegreen;
+    border-radius: 1rem;
+    flex-grow: 1;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+nav ul li a {
+    color: black;
+    background: none;
+    display: block;
+}
+
+
+main {
+    text-align: center;
+}
+
+#mission {
+    padding-top: 1.5rem;
+}
+
+#logo-wrapper {
+    height: 95vh;
+    width: 100%;
+    margin: auto;
+    background-image: url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: .2rem solid lightgreen;
+    border-bottom: .2rem solid lightgreen;
+}
+
+p, figcaption {
+    margin-top: .6rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    background-color: lightgreen;
+    width: 60%;
+    display: inline-block;
+    border-radius: .5rem;
+}
+
+h1 {
+    font-family: 'Cinzel', sans-serif;
+    display: inline;
+    background: none;
+}
+
+h2 {
+    margin:5vh auto;
+    background-color: lightgreen;
+    width: 75vw;
+    border-radius: 2.5rem;
+}
+
+.showcase  {
+    display: flex;
+    justify-content: space-around;
+}
+
+figure {
+    align-items: center;
+    align-content: center;
+
+}
+
+img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+    border: .2rem solid lightgreen;
+    border-radius: 1rem;
+}
+
+#individual {
+    object-position: 50% 20%;
+}
+
+#remote {
+    object-position: 60% 30%;
+}
+
+#bob {
+    object-position: 50% 30%;
+}
+
+#sally {
+    object-position: 40% 20%;
+}
+
+.img-wrapper {
+    width: 30vw;
+    height: 75vh;
+    margin: auto;    
+}
+
+@media only screen and (orientation: portrait) {
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+    }
+    #mission {
+        padding-top: 4.4rem;
+    }
+    #logo-wrapper {
+        height: 86vh;
+    }
+
+    .showcase {
+        flex-direction: column;
+    }
+    .img-wrapper {
+        width: 90vw;
+        height: 20vh; 
+    }
+    p, figcaption {
+        margin-bottom: .3rem;
+    }
+
+}
