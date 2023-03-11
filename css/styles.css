@@ -1,143 +1,285 @@
+/* 
+Final Project
+created by Wayne Mattis
+for Prof. Lizmi's TECH272 class Spring 2023
+*/
+
+/* import fonts from Google Fonts API */
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Encode+Sans+Expanded:wght@400;700&display=swap');
+
+/* Overwrite browser defaults */
 * {
-    font-size: 16px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	max-width: 100vw;
 }
-
+html {
+	font-size: 18px;
+	font-family: 'Encode Sans Expanded', sans-serif;
+}
 body {
-    background-color: black;
-    color: lightgrey;
-
+	background-color: black;
+    background-image: url("../images/galaxy-background.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	border-right:1rem solid silver;
+	border-left: 1rem solid silver;
+	color: white;
+	text-align: center;
+}
+li {
+	list-style-type: none;
 }
 
+/* Persistent site navigation */
+
+header, footer {
+	position: sticky;
+	background: silver;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+.banner {
+	color: black;
+	text-align: center;
+	letter-spacing: .25em;
+	text-transform: uppercase;
+}
+header ul, footer ul {
+	margin:  0;
+	padding: .1em 0;
+}
+header li, footer li {
+	display: inline-block;
+	width: 8em;
+	margin: .1em .2em;
+	font-size: 1rem;
+}
+header a, footer a {
+	display: inline-block;
+	width: 100%;
+	background-color: rgb(0, 15, 0);
+	color: lightgreen;
+	border: .3em inset darkgray;
+	border-radius: 1em;
+	text-decoration: none;
+}
+header a:active, footer a:active, .current {
+	color: rgb(0, 15, 0);
+	background-color: lightgreen;
+}
 header {
-    margin: 2rem 4rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+	top: 0;
+}
+footer {
+	bottom: 0;
+}
+header, footer {
+	z-index: 99;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-p {
-    display: block;
-    font-size: 1.5rem;
-}
+/* Main component styles */
 
 main {
-    margin: 0 2rem;
-    text-align: center;
+	min-height: 100vh;
+	line-height: 1.5em;
+	opacity: .8;
+}
+main > * {
+	margin: 1em auto;
+	max-width: 80%;
+	clear: both;
+}
+.solid-bg {
+	background-color: black;
+	padding: 1em;
+	margin: 1em auto;
+}
+h1 {
+	font-family: 'Aldrich', sans-serif;
+}
+h1, h2, h3 {
+	background-color: black;
+	padding: 1em;
+}
+h3 {
+	margin: auto;
+}
+h2, h3 {
+	width: 50%;
+}
+h2 {
+	margin: 2em auto 0;
+}
+h3 {
+	margin: 1em auto 0;
+}
+.hug-heading, .col-container h3, .solid-bg h2 {
+	margin-top: 0;
+	padding-top: 0;
+}
+img {
+	padding: .5rem 1rem;
+}
+main a, main a:link, main a:visited, main a:hover {
+	text-decoration: underline;
+	color: white;
+}
+main a:active {
+	color: lightgreen;
+}
+:target {
+	color: black;
+	background-color: lightgreen;
 }
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+/* Lists and tables */
+
+dl {
+	text-align: left;
+}
+dt {
+	scroll-margin-top: 10rem;
+	font-weight: bold;
+}
+dd {
+	margin-left: 2em;
+	margin: 0 0 2em 1em;
+}
+dd li {
+	list-style-type: circle;
+	margin-left: 2em;
+}
+dd:last-child {
+	margin-bottom: 0;
+}
+.centered-dl {
+	text-align: center;
+}
+.centered-dl {
+	margin-left: 0;
+}
+table {
+	width: 100%;
+}
+caption {
+	margin: 0 auto;
+}
+th {
+	font-weight: bold;
+}
+th, td, .collection-display li {
+	border: .1rem solid white;
+	padding: .5em;
+}
+.collection-display li {
+	display: inline-block;
+	margin: .5em;
+}
+.separated-list li {
+	margin: 1em;
+}
+/* Float and column styles */
+
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+img.float-left, img.float-right {
+	width: 25%;
+	height: auto;
+}
+.col-3 {
+	width: 29%;
+}
+img.col-3 {
+	height: auto;
+	position: sticky;
+	top: 35vh;
+}
+.col-2 {
+	width: 43%;
 }
 
-.projects {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* Place at bottom of components containing floated objects to make the component stretch to contain the whole floated object */
+.float-container-stretcher {
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	clear: both;
+	margin: auto;
 }
 
-.project {
-    width: 100%;
+/* span styles */
+
+.quote-attribution {
+	display: block;
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
 }
 
-button, a {
-    background-color: #2c2c2c;
-    color: #d3d3d3;
-    padding: 2rem;
-    border: .1rem solid #008000;
-    border-radius: 1.5rem;
-    text-decoration: none;
+/* Styles for alternating project summaries */
+
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-left h2, .align-right h2 {
+	max-width: 100%;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-button:hover, a:hover {
-    cursor: pointer;
-    background-color: #004000
-}
+/* Allow larger screens to see more background instead of stretched foreground content */
 
-button:disabled, .anchorToCurrent {
-    color: #ffffff;
-    background-color: #585858;
-    pointer-events: none;
-    border: .75rem solid #008000;
-}
-
-button:active, a:active {
-    opacity: .5
-}
-
-.preview {
-    height: auto;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    display: none;
-}
-
-.description {
-    background-color: black;
-    color: #d3d3d3;
-    padding: 2rem;
-    text-align: center;
-    width: 80%;
-}
-
-footer {
-    text-align: center;
-    line-height: 2rem;
-}
-
-.contact-container {
-    width: 100%;
-    display: flex;
-    justify-content:space-around;
-    align-content: space-around;
-}
-
-.contact-container a {
-    border-radius: 0;
-    text-decoration: underline;
-	width: 12em;
-}
-
-.description a {
-    text-decoration: underline;
-    background: none;
-    padding: 0;
-    border: none;
-    margin: none;
-    display: inline;
-    border-radius: 0;
-}
-
-@media (orientation: portrait) {
-    nav, .main-container, .contact-container {
-        flex-direction: column-reverse;
-		align-items: center;
+@media only screen and (min-width: 80rem) {
+	main * {
+	max-width: 53rem;
     }
+	img.col-3 {
+		position: static;
+	}
+}
 
-    .preview {
-        width: 100%;
-        height: 20rem;
-    }
+/* replace vertical column layout with block flow and restore 16px rem for mobile */
 
-    .projects {
-        width: 100%;
-    }
+@media only screen and (max-width: 700px) {
+	html {
+		font-size: 16px;
+	}
+	.col-2, .col-3, img {
+		float: none;
+		display: block;
+		margin: 1rem auto;
+		width: 90%;
+	}
+	img.col-3 {
+		position: static;
+	}
+	.mobile-overflow {
+		overflow-x: scroll;
+	}
+}
+
+/* Mitigate more heading and table overflow issues for smaller mobile screens */
+
+@media only screen and (max-width: 600px) {
+	caption h3 {
+		margin-left: 0;
+	}
+	h1, h2, h3 {
+		font-size: 18px;
+	}
 }
