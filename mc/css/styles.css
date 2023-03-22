@@ -1,0 +1,156 @@
+/* 
+Final Project
+created by Wayne Mattis
+for Prof. Lizmi's TECH272 class Spring 2023
+*/
+
+
+/* Set new defaults site-wide */
+*:not(dd) {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a, a:link, a:visited, a:hover {
+	text-decoration: underline;
+	color: lightgray;
+}
+
+a:active {
+	color: lightgreen;
+}
+
+html {
+	font-size: 18px;
+}
+
+body {
+	background-color: black; 
+    background-image: url("./images/galaxy-background.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	color: lightgray;
+	text-align: center;
+}
+
+/* Persistent site navigation */
+
+header, footer {
+	position: sticky;
+	background: silver;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+
+header ul, footer ul {
+	margin:  0;
+	padding: .5em 0;
+}
+
+header li, footer li {
+	display: inline-block;
+	width: 8em;
+	margin: .1em .2em;
+	font-size: 1rem;
+}
+
+header a, footer a {
+	display: inline-block;
+	width: 100%;
+	background-color: darkolivegreen;
+	color: lightgreen;
+	border: 1px inset black;
+	border-radius: 1em;
+	text-decoration: none;
+}
+
+header {
+	top: 0;
+}
+
+footer {
+	bottom: 0;
+}
+
+/* Main component styles */
+
+main {
+	min-height: 100vh;
+	max-width: 100vw;
+	border-right:1em solid silver;
+	border-left: 1em solid silver;
+	padding: 1vh 5vw;
+	line-height: 1.5rem;
+}
+
+main > *  {
+	background: black;
+	padding: 1rem;
+	margin: 1rem auto;
+	clear: both;
+	overflow:scroll;
+}
+
+dl {
+	text-align: left;
+}
+
+dd {
+	font-style: italic;
+}
+
+
+
+table {
+	margin: auto;
+}
+
+caption {
+	margin: .5em auto;
+}
+
+th {
+	font-weight: bold;
+}
+
+th, td, .collection-display li {
+	border: .1rem solid lightgray;
+	padding: .5em;
+}
+
+.column {	
+	display: inline-block;
+	vertical-align: top;
+	margin: 1rem;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.collection-display li {
+	display: inline-block;
+	margin: .5em;
+}
+
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+
+img.float-left, img.float-right {
+	margin: .5rem 1rem;
+}
+

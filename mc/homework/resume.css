@@ -1,0 +1,98 @@
+/*
+    Page created by Wayne Mattis
+    for Prof. Lizmi's TECH 272 course
+    CSS based on the stylesheet for my personal portfolio page at https://wbmattis2.github.io/styles.css and the embedded styles in ./resume.html
+*/
+
+html {
+    font-size: 18px;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #d3d3d3;
+    letter-spacing: .125em;
+    font-size: 1rem;
+    min-width: 800px;
+} /* Passes font-family and color down to the entire visible document (unless more specific rules are put in place) */
+
+header, footer {
+    text-align: center;
+}
+
+header * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer {
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2, aside {
+    margin: 1% auto;
+    text-align: center;
+}
+
+aside {
+    font-style: italic;
+}
+
+section {
+    border: 1px solid #008000;
+    margin: 2rem;
+    padding: 1% 5%;
+    background-color: #2c2c2c;
+    line-height: 1.75em;
+}
+
+section:hover {
+    background-color: hsl(120, 100%, 13%);
+}
+
+/* Smaller details: Anchors and listed skills */
+
+a {
+    background-color: #2c2c2c;
+    color: #d3d3d3;
+    padding: 1em;
+    border: .1rem solid #008000;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: #004000;
+}
+
+a:active {
+    opacity: .5;
+}
+
+main a {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.skill {
+    display: inline;
+    border: .1em solid #008000;
+    padding: .25em;
+    margin: .5em;
+    line-height: 2em;
+}
+
