@@ -1,14 +1,14 @@
-#Personal Portfolio Website
+#E-Portfolio Website
 
 A Portfolio Project by Benny Mattis
 
 ##Purpose
 
-This portfolio displays some content demonstrating my abilities.
+This portfolio demonstrates some of my abilities in web development while serving as an online resume.
 
 ##Features
 
-You can preview a project by clicking on it; the preview section will be updated with the relevant content by way of JavaScript.
+This website features a main e-portfolio as well as two sub-sites for my Codecademy portfolio and my Montgomery College portfolio. The main e-portfolio site features responsive design and a JavaScript feature that allows you to view the background unencumbered by the page contents.
 
 ##How to Use
 
@@ -16,7 +16,7 @@ Use a web browser to navigate to https://wbmattis2.github.io.
 
 ##Technologies
 
-This website was made from scratch with HTML, CSS, and JavaScript.
+These websites was made from scratch with HTML, CSS, and JavaScript.
 
 ##Authors
 
