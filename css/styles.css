@@ -165,12 +165,6 @@ dd li {
 dd:last-child {
 	margin-bottom: 0;
 }
-.centered-dl {
-	text-align: center;
-}
-.centered-dl {
-	margin-left: 0;
-}
 table {
 	width: 100%;
 }
@@ -192,7 +186,18 @@ th, td, .collection-display li {
 	margin: 1em;
 }
 /* Float and column styles */
-
+.flex-col-container {
+		align-items: stretch;
+	}
+	.col-wrapper {
+		flex: 1;
+		display: flex;
+	}
+	.col-wrapper img {
+		width: 80%;
+		max-width: 35vw;
+		object-fit: cover;
+	}
 .flex-col-container, .project-group {
 	display: flex;
 	justify-content: space-around;
@@ -212,14 +217,6 @@ th, td, .collection-display li {
 img.float-left, img.float-right {
 	width: 25%;
 	height: auto;
-}
-.col-3 {
-	width: 30%;
-}
-img.col-3 {
-	height: auto;
-	position: sticky;
-	top: 35vh;
 }
 .image-bg {
 	background-size: cover;
@@ -272,33 +269,27 @@ img.col-3 {
     }
 }
 
-/* replace vertical column layout with block flow and restore 16px rem for mobile */
+/* replace vertical column layout with block flow and restore 16px rem for smaller screens */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	html {
 		font-size: 16px;
 	}
 	.flex-col-container {
 		display: block;
 	}
-	.col-2, .col-3, img {
+	.col-2, img {
 		float: none;
 		display: block;
 		margin: 1rem auto;
 		width: 90%;
-	}
-	.col-3.image-bg {
-		height: 40vh;
-	}
-	img.col-3 {
-		position: static;
 	}
 	.mobile-overflow {
 		overflow-x: scroll;
 	}
 }
 
-/* Mitigate more heading and table overflow issues for smaller mobile screens */
+/* Mitigate issues for smaller mobile screens */
 
 @media only screen and (max-width: 600px) {
 	caption h3 {
@@ -310,5 +301,8 @@ img.col-3 {
 	header ul {
 		max-width: 320px;
 		margin: auto;
+	}
+	.no-mobile {
+		display: none;
 	}
 }
