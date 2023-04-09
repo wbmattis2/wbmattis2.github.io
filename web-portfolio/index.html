@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>"Benny" Wayne Mattis</h1>
+		<p>Click below to view some of my favorite recent projects in web design and development.</p>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="projects">
+				<button class="project" id="personal-website" aria-describedby="personal-website">
+                   Personal Website
+                </button>
+                <button class="project" id="mixed-messages" aria-describedby="mixed-messages-description">
+                    JavaScript Backstory Generator
+                </button>
+				<button class="project" id="php-exercises" aria-describedby="php-exercises-description">
+                    PHP Exercises
+                </button>
+				<button class="project" id="sql-db" aria-describedby="sql-db-description">
+                   SQL Database
+                </button>
+				<button class="project" id="python-data-dashboard" aria-describedby="python-data-dashboard-description">
+                    Python Data Dashboard
+                </button>
+            </div>
+            <div class="preview" id="default-preview" style="background-color: #004000;">
+                <div class="description" id="default-description">
+                    An error occurred. Please find navigate to the <a href="contact.html">Contact page</a> to find links to other web pages featuring my work.
+                </div>
+            </div>
+			<div class="preview" id="personal-website-preview" style="background-image: url('./images/wireframe.png')">
+                <div class="description" id="personal-website-description">
+                    Personal website intended to showcase my skills in web design and development. <a href="./images/wireframe.png" title="View wireframe: Personal Website" target="_blank">View the wireframe</a>, <a href="./images/mockup.png" title="View mockup: Personal Website" target="_blank">view the mockup</a>, or <a href="../index.html" title="View project: Personal Website" target="_blank">view the latest version of this project</a> in a new tab.
+                </div>
+            </div>
+            <div class="preview" id="mixed-messages-preview" style="background-image: url('./images/mixed-messages.png')">
+                <div class="description" id="mixed-messages-description">
+                    A JavaScript program for the Node.js runtime environment, written in collaboration with another Codecademy student, that randomly generates silly sci-fi narratives. <a href="https://replit.com/@wbmattis2/SciFiBackstoryGenerator" title="Sci-Fi Backstory Generator on Replit" target="_blank">View this project in a new tab</a>
+                </div>
+            </div>
+			<div class="preview" id="php-exercises-preview" style="background-image: url('./images/php-exercises.png')">
+                <div class="description" id="php-exercises-description">
+                    A website that showcases some of the things that can be done with PHP. <a href="https://github.com/wbmattis2/php-exercises" title="PHP Exercises on GitHub" target="_blank">View this project in a new tab</a>
+                </div>
+            </div>
+			<div class="preview" id="sql-db-preview" style="background-image: url('./images/sql-db.png')">
+                <div class="description" id="sql-db-description">
+                    Query written for PostgreSQL that creates a database for volunteers and volunteer opportunities. <a href="https://github.com/wbmattis2/volunteer-database" title="View project: SQL Database" target="_blank">View this project in a new tab</a>
+                </div>
+            </div>
+			<div class="preview" id="python-data-dashboard-preview" style="background-image: url('./images/dash.png')">
+                <div class="description" id="python-data-dashboard-description">
+                    A Python program that uses Plotly's Dash library to create a browser-viewable dashboard for IBM's Applied Data Science Capstone. <a href="https://github.com/wbmattis2/data-science-capstone/tree/main/plotly-dashboard" title="View project: Data Science Dashboard" target="_blank">View this project in a new tab</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright 2022 Benny Mattis
+    </footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
