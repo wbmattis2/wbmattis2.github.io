@@ -16,7 +16,7 @@ const toggleLightMode = (e) => {
     } else {
       e.target.classList.add("current");
       e.target.title = "Touch or click to return to dark mode";
-      document.body.style.backgroundImage = "none";
+      document.body.style.backgroundImage = 'url("images/galaxy-background-light.png")';
       solidBgElements.forEach(element => {
           element.style.color = "black";
           element.style.backgroundColor = "silver";
