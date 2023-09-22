@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="./css/styles.css" type="text/css" rel="stylesheet">
+<title>Games</title>
+<style>
+	#find-your-hat-image {
+		background-image: url("./images/find-your-hat.png"); 
+		background-position: 50% 30%;
+	}
+	#evil-hour-image {
+		background-image: url("./images/evil-hour.jpg");
+		background-position: 50% 30%;
+	}
+	#meme-tag-image {
+		background-image: url("./images/meme-tag.png");
+		background-position: 50% 25%;
+	}
+	#opoly-image {
+		background-image: url("./images/opoly.png");
+		background-position: 50% 50%;
+	}
+	#the-mysterious-noise-image {
+		background-image: url("./images/the-mysterious-noise.png");
+		background-position: 50% 10%;
+	}
+	span {
+		font-style: italic;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<div class="banner"><a href="index.html">E-Portfolio: "Benny" Wayne Mattis</a></div>
+		<hr>
+		<nav>
+			<ul>
+				<li>
+					<a href="./index.html" title="About">About</a>
+				</li>
+				<li>
+					<a href="./writing.html" title="Writing">Writing</a>
+				</li>
+				<li>
+					<a href="./coding.html" title="Coding">Coding</a>
+				</li>
+				<li>
+					<a href="./games.html" title="Games" class="current">Games</a>
+				</li>
+				<li>
+					<a href="./contact.html" title="Contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Games</h1>
+		<section class="align-left solid-bg">
+			<h2>The Evil Hour</h2>
+			<div class="project-group">
+				<div id="evil-hour-image" class="image-bg" aria-hidden="true"></div>
+			    <p>A philosophical text adventure made with Twine for the <a href="https://itch.io/jam/critical-creative-philosophy" title="View game jam on itch.io" target="_blank">Critical-Creative Philosophy</a> game jam of 2022. <a href="https://wbmattis2.itch.io/the-evil-hour" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
+			</div>
+		</section>
+		<section class="align-right solid-bg">
+			<h2>Meme Tag 1927</h2>
+			<div class="project-group">
+			    <p>A 2D multiplayer game made with vanilla JavaScript for the <a href="https://itch.io/jam/gaming-like-its-1927" title="View game jam on itch.io" target="_blank">Gaming Like It's 1927</a> game jam of January 2023. <a href="https://wbmattis2.itch.io/meme-tag-1927" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
+				<div id="meme-tag-image" class="image-bg" aria-hidden="true"></div>
+			</div>
+		</section>
+		<section class="align-left solid-bg">
+			<h2>Find Your Hat</h2>
+			<div class="project-group">
+				<div id="find-your-hat-image" class="image-bg" aria-hidden="true"></div>
+			    <p>An adventure game with ASCII graphics made with Node.js to specifications provided in a Codecademy project. <a href="https://replit.com/@wbmattis2/find-your-hat" title="Play game and view its code on Replit" target="_blank">Play this game in a new tab</a></p>
+			</div>
+		</section>
+		<section class="align-right solid-bg">
+			<h2>The Mysterious Noise</h2>
+			<div class="project-group">
+			    <p>A short text adventure made with C# to specifications provided in a Codecademy project. <a href="https://replit.com/@wbmattis2/opoly" title="Play game and view its code on Replit" target="_blank">Play this game in a new tab</a></p>
+				<div id="the-mysterious-noise-image" class="image-bg" aria-hidden="true"></div>
+			</div>
+		</section>
+		<section class="align-left solid-bg">
+			<h2>Opoly</h2>
+			<div class="project-group">
+				<div id="opoly-image" class="image-bg" aria-hidden="true"></div>
+			    <p>A virtual board game made with Java to specifications provided in a Computer Science course at UMASS Amherst. <a href="https://replit.com/@wbmattis2/opoly" title="Play game and view its code on Replit" target="_blank">Play this game in a new tab</a></p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<ul>
+			<li>
+				<button id="view-background-button" title="Hide content to view background image">&#x2606; Stargazing &#x2606;</button>
+			</li>
+			<li>
+				<button title="View the top of this page" class="auto-scroller">&uarr; Top of Page &uarr;</button>
+			</li>
+			<li>
+				<button id="light-mode-button" title="Touch or click to view dark text on light background" target="_blank">&#9728; Light Mode &#9728;</button>
+			</li>
+		</ul>
+	</footer>
+	<script src="./js/view-background.js"></script>
+	<script src="./js/observe-intersection.js"></script>
+	<script src="./js/light-mode.js"></script>
+</body>
+</html>

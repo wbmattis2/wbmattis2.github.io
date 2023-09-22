@@ -55,10 +55,15 @@ header ul, footer ul {
 }
 header li, footer li {
 	display: inline-block;
-	width: 20%;
 	min-width: 10em;
 	margin: .1em .2em;
 	font-size: 1rem;
+}
+header li {
+	width: 18%;
+}
+footer li {
+	width: 28%;
 }
 header ul a, footer a, footer button {
 	display: inline-block;
