@@ -1,5 +1,6 @@
+const bgButton = document.getElementById("view-background-button");
+
 const toggleViewBackground = (e) => {
-  const bgButton = e.target;
   const mainStyles = document.getElementsByTagName("main")[0].style;
   let currentlyViewing = bgButton.classList.contains("current");
   if (currentlyViewing) {
@@ -109,7 +110,7 @@ const createAsteroid = (xPos, yPos) => {
 };
 
 const toggleBackgroundGame = (e) => {
-  if (e.target.classList.contains("current")) {
+  if (bgButton.classList.contains("current")) {
     document.body.style.overflow = "hidden";
     document.body.style.cursor = "crosshair";
     document.body.style.touchAction = "manipulation";
@@ -132,7 +133,15 @@ const toggleBackgroundGame = (e) => {
   }
 }
 
-document.getElementById("view-background-button").onclick = (e) => {
+bgButton.onclick = (e) => {
   toggleViewBackground(e);
   toggleBackgroundGame(e);
 };
+
+
+const gameButton = document.getElementById("background-game-button");
+
+if (typeof(gameButton) != 'undefined' && gameButton != null) {
+  gameButton.onclick = (e) => {bgButton.onclick(e);}
+}
+

@@ -5,9 +5,9 @@
 <link href="./css/styles.css" type="text/css" rel="stylesheet">
 <title>Games</title>
 <style>
-	#find-your-hat-image {
-		background-image: url("./images/find-your-hat.png"); 
-		background-position: 50% 30%;
+	#gerasim-image {
+		background-image: url("./images/gerasim.png"); 
+		background-position: 50% 35%;
 	}
 	#evil-hour-image {
 		background-image: url("./images/evil-hour.jpg");
@@ -17,16 +17,24 @@
 		background-image: url("./images/meme-tag.png");
 		background-position: 50% 25%;
 	}
-	#ufo-image {
-		background-image: url("./images/ufo.png");
+	#stargazing-image {
+		background-image: url("./images/stargazing.png");
 		background-position: 50% 50%;
 	}
 	#bills-passage-image {
 		background-image: url("./images/bills-passage.png");
 		background-position: 50% 25%;
 	}
-	span {
-		font-style: italic;
+	#background-game-button {
+	text-decoration: underline;
+	color: white;
+	display: inline;
+	background: none;
+	border: none;
+	cursor: pointer;
+	}
+	#background-game-button:active {
+		color: lightgreen;
 	}
 </style>
 </head>
@@ -60,35 +68,35 @@
 			<h2>Bill's Passage</h2>
 			<div class="project-group">
 				<div id="bills-passage-image" class="image-bg" aria-hidden="true"></div>
-			    <p>An educational resource management game made with TypeFic for the <a href="https://www.challenge.gov/?challenge=library-of-congress-friends-choice-civics-video-game-challenge" title="View challenge on Challenge.gov" target="_blank">Library of Congress Friends' Choice Civics Video Game Challenge</a> of 2023. <a href="https://wbmattis2.itch.io/bills-passage" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
+			    <p>An educational resource management game made with TypeFic and JavaScript for the <a href="https://www.challenge.gov/?challenge=library-of-congress-friends-choice-civics-video-game-challenge" title="View challenge on Challenge.gov" target="_blank">Library of Congress Friends' Choice Civics Video Game Challenge</a> of 2023. <a href="https://wbmattis2.itch.io/bills-passage" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
 			</div>
 		</section>
 		<section class="align-right solid-bg">
+			<h2>GeraSim</h2>
+			<div class="project-group">
+			    <p>A stealth game made with GB Studio for the <a href="https://itch.io/jam/bookbound-game-jam" title="View game jam on itch.io" target="_blank">BookBound Game Jam</a> of 2023. <a href="https://wbmattis2.itch.io/gerasim" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
+				<div id="gerasim-image" class="image-bg" aria-hidden="true"></div>
+			</div>
+		</section>
+		<section class="align-left solid-bg">
 			<h2>Meme Tag 1927</h2>
 			<div class="project-group">
-			    <p>A 2D multiplayer game made with vanilla JavaScript for the <a href="https://itch.io/jam/gaming-like-its-1927" title="View game jam on itch.io" target="_blank">Gaming Like It's 1927</a> game jam of 2023. <a href="https://wbmattis2.itch.io/meme-tag-1927" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
 				<div id="meme-tag-image" class="image-bg" aria-hidden="true"></div>
-			</div>
-		</section>
-		<section class="align-left solid-bg">
-			<h2>The Evil Hour</h2>
-			<div class="project-group">
-				<div id="evil-hour-image" class="image-bg" aria-hidden="true"></div>
-			    <p>A philosophical text adventure made with Twine for the <a href="https://itch.io/jam/critical-creative-philosophy" title="View game jam on itch.io" target="_blank">Critical-Creative Philosophy</a> game jam of 2022. <a href="https://wbmattis2.itch.io/the-evil-hour" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
+			    <p>A 2D multiplayer game made with vanilla JavaScript for the <a href="https://itch.io/jam/gaming-like-its-1927" title="View game jam on itch.io" target="_blank">Gaming Like It's 1927</a> game jam of 2023. <a href="https://wbmattis2.itch.io/meme-tag-1927" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
 			</div>
 		</section>
 		<section class="align-right solid-bg">
-			<h2>Find Your Hat</h2>
+			<h2>The Evil Hour</h2>
 			<div class="project-group">
-			    <p>An adventure game made with Node.js to specifications provided in a Codecademy project. <a href="https://replit.com/@wbmattis2/find-your-hat" title="Play game and view its code on Replit" target="_blank">Play this game in a new tab</a></p>
-				<div id="find-your-hat-image" class="image-bg" aria-hidden="true"></div>
+			    <p>A philosophical text adventure made with Twine for the <a href="https://itch.io/jam/critical-creative-philosophy" title="View game jam on itch.io" target="_blank">Critical-Creative Philosophy</a> game jam of 2022. <a href="https://wbmattis2.itch.io/the-evil-hour" title="Play game on itch.io" target="_blank">Play this game in a new tab</a></p>
+				<div id="evil-hour-image" class="image-bg" aria-hidden="true"></div>
 			</div>
 		</section>
 		<section class="align-left solid-bg">
-			<h2>UFO</h2>
+			<h2>Cyberspace Shooter</h2>
 			<div class="project-group">
-				<div id="ufo-image" class="image-bg" aria-hidden="true"></div>
-			    <p>A simple hangman-style game made with C++ to specifications provided in a Codecademy project. <a href="https://replit.com/@wbmattis2/ufo" title="Play game and view its code on Replit" target="_blank">Play this game in a new tab</a></p>
+				<div id="stargazing-image" class="image-bg" aria-hidden="true"></div>
+			    <p>A simple asteroid-shooting game made with vanilla JavaScript for this portfolio site. <span id="background-game-button">Play this game by activating the "Stargazing" feature of this web page</span></p>
 			</div>
 		</section>
 	</main>
